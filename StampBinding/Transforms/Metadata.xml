@@ -1,0 +1,30 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <!--<remove-node path="/api/package[@name='Com.Stamp12cm.Echosdk']/class[@name='EchossLayout']" />-->
+  <attr path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossLayout']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossLayout.EchossPointStr']" name="visibility">public</attr>
+
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='StampAppTestCase']/method[@name='a']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossLayout']/method[@name='a']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossManager']/method[@name='a']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossManager']/method[@name='b']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossManager']/method[@name='c']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossManager']/method[@name='d']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossManager']/method[@name='e']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossManager']/method[@name='f']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossManager']/method[@name='g']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossManager']/method[@name='h']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossManager']/method[@name='i']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossManager']/method[@name='j']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossManager']/method[@name='k']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='EchossManager']/method[@name='l']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk']/class[@name='StampBaseView']/method[@name='a']" />
+  <remove-node path="/api/package[@name='com.stamp12cm.echosdk.net']/class[@name='AndroidHttpClient']/method[@name='a']" />
+
+</metadata>

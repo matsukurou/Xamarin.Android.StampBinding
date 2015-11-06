@@ -1,0 +1,67 @@
+﻿using System;
+
+using Android.App;
+using Android.Content;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using Android.OS;
+
+namespace iDartsStampDroid
+{
+    [Activity(Label = "iDartsStampDroid", MainLauncher = true, Icon = "@drawable/icon")]
+    public class MainActivity : Activity
+    {
+        int count = 1;
+
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+
+            // Get our button from the layout resource,
+            // and attach an event to it
+            Button button = FindViewById<Button>(Resource.Id.myButton);
+			
+            button.Click += delegate
+            {
+                button.Text = string.Format("{0} clicks!", count++);
+            };
+
+//            Com.Stamp12cm.Echosdk.EchossManager.InitEchossLibAutoRetry(
+//                this, 
+//                "S0006", 
+//                false, 
+//                false, 
+//                new EchossListener(),
+//                3000);
+        }
+    }
+
+//    public class EchossListener : Com.Stamp12cm.Echosdk.EchossManager.IOnEchossManagerListener
+//    {
+//        public void OnInit(String crdlUseTyp, String locUseTyp)
+//        {
+//            Console.WriteLine("Success");
+//        }
+//
+//        public void OnInitError(String errorCode, String errorMsg)
+//        {
+//            Console.WriteLine("Error : " + errorMsg);
+//        }
+//
+//        public void Dispose()
+//        {
+//            
+//        }
+//
+//        public IntPtr Handle
+//        {
+//            get;
+//        }
+//    }
+}
+
+
